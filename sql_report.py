@@ -8,7 +8,7 @@ while not LOGGED_ON:
     USER = input('Username: ')
     PASSWORD = input('Password: ')
     try:
-        cnx = mysql.connector.connect(user=credentials['user'], password=credentials['password'],
+        cnx = mysql.connector.connect(user=USER, password=PASSWORD,
                                         host=HOST,
                                         database=DB_NAME)
     except mysql.connector.Error as err:
