@@ -5,12 +5,8 @@ DB_NAME = 'employees'
 HOST = '127.0.0.1'
 LOGGED_ON = False
 while not LOGGED_ON:
-    credentials = {
-        "user": "root",
-        "password": "Parker112!"
-    }
-    # USER = input('Username: ')
-    # PASSWORD = input('Password: ')
+    USER = input('Username: ')
+    PASSWORD = input('Password: ')
     try:
         cnx = mysql.connector.connect(user=credentials['user'], password=credentials['password'],
                                         host=HOST,
